@@ -1,0 +1,108 @@
+1) New Features in ES6
+   let,var,const,default values,spread operators,rest operators,arrowfunction,destructing assignmnet,Enhanced object literals, promises
+   modules and classes
+   
+2)what are defualt values in ES6
+   Default functionoal name paremeters allowed to be initilaized with default values  if no values or undefined is passed
+   Ex: Function add(a=2,b=3){return a+b}
+       add(2,2) => 4
+       add(2)  => 5
+       
+ 3)What are Templae literals 
+   This is a way to output varibles in string(inside of back-ticked string)
+  
+  4)What is Destructing Assignment 
+    It is a JS expression that makes it to unpack values from Arrays or properites from object into Distinct 
+    different values 
+    Example: const [a,b,...rest] = [1,2,3,4,5]
+             console.log(a)=> 1, console.log(rest) => [3,4,5]
+   
+  5) what is enhanced object literals in ES6
+      the new propert value shorthand let us abbreviate the initlization of a property within an object
+      literal, provided key mathces an exisiitng variable name 
+      Example : funciton getCarDetails(model,color,year){return {model,color,year} }
+                getCarDetails('kia','black',2018) => {make:'kia',color:'black',year:'2018'}
+    
+  6) What are Arrow functions 
+       It is used to represnt ananumys function and thease are not hoisted
+       example: const testFunction = () => {} // no need to use return if it is single statement
+  
+  7) What are promises
+     promises are nothing but an object which is used for asynchronoius operation
+     A promise is a return object to which you attach callbacks instead of passing callback into function
+     3 states -> pending, fulfiled and Rejected
+     We can Access promise using 
+     1)then() 
+     2)catch()
+     
+     const newPromise = new Promise(function(resolve,reject))
+           newmpromise.then(res=>res+200)
+    
+ 8) Let - we can declare a local variable in block scope and they are mutable means we can change
+       const - varibales can be assigned once but after that we cannot reassign. Scope is block scope
+       
+     
+ 9) What are spread operator in ES6
+       spreadsyntax is notated by ...(three dots)
+       it allows an iterbale to expand in places
+       Example let s1=[3,4], let s2=[5,6]
+               let s3 = [3,4,...s1,5,6] => [3,4,3,4,5,6,]
+      
+  10) What is inheritance 
+        In simple creating a new class from exisiting class inheritance 
+        
+11) differnece bewtween callback and promises
+    callback funciton is a function that is passed into another function. It may or maynot be executed asynchroniusly
+    Callback: It is used to handle the execution of function after the completion of the execution of another function. 
+    A callback would be helpful in working with events. In the callback, a function can be passed as an argument to another function. 
+    It is a great way when we are dealing with basic cases such as minimal asynchronous operations.
+
+  Callback hell: When we develop a web application that includes a lot of code, then working with callback is messy. 
+  This excessive Callback nesting is often referred to as Callback hell.
+    
+    Example 
+         function inner(){return 2}
+         function outer(y){return y()}
+         outer(inner);
+    promise is an object which takes a callback and executes asynchronoously
+ 
+ 12) Difference between map,filter,reduce
+     .map => when we want to transform elements in an array
+     .filter => when we want to select subset of multiple elemets from an array
+     .find => when you want to select a single element from an array
+     .reduce => when you want to drive a single valu from multiple elemenets in an array
+   
+  13) Babel is used as a transpiler for converting ES6 code to pre ES6 javascript which browser supports
+      Webback is a module bundler which takes modules with dependencies and generate statcc assets representing 
+      those modules
+  
+14) what is a set in ES6 
+    Set is a collection of unique values
+    Example let set=new Set()
+            set.add(1), set.add('1'), set.add({key:'value})
+            console.log(set) => {1,'1',{key:'value'}}
+
+15) What is Weakmap 
+   whenever if we want to extend an object but can because of its sealed - then here weakmap can
+   be applied
+   Weak maps are almost similar to maps, but the keys in weak maps must be objects. 
+   It stores each element as a key-value pair where keys are weakly referenced. 
+   Here, the keys are objects, and the values are arbitrary.
+   
+ 16) What are generaotrs 
+    these are the functions that can be exited and later re enetered. 
+    
+ 17) what are rest operaotrs 
+  IT impoves the ability to handle the parameters.
+  function show(..arg){ let sum=0;for(let i of args){sum+=i}console.log(sum)}=> show(10,20,30)=>60
+
+
+
+
+References: 
+1)https://www.slideshare.net/RatnalaCharankumar/es6-interview-questions-answers
+     
+     
+     
+     
+       
