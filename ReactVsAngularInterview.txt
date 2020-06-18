@@ -1,0 +1,11 @@
+1) The main difference between Angular and React is 
+   a) Framework vs Library - React is javascript library and updates virtual dom,uni directional data flow          
+                              Angular is Javascript framework which updates Real DOM, bi directional data flow
+   b) angular uses typescript, React uses JSX
+   c) Angular is easy to setup but takes time to deliver projects since it involved lot of suntax for simple things
+      React takes longer for setup but build apps relativerly quickly 
+   d)   Perfomrance - React performace is great because of virtual dom 
+        Angular performance is worse becase of complex and synmic web apps. The main reason because of bidirectional data binding 
+        eachbinding -> watcher -> tracj chnages -> each loop continues -> untill watches and associate values are checked
+ 
+ 
