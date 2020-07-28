@@ -102,6 +102,17 @@ function reverseString(mainString){
 let finalReverseString = reverseString("tranzeal")
 console.log(finalReverseString);
 
+/*---firstLetter convert to captial for a string------- */
+
+let name = 'Satish Kumar'
+let y = name.split(" ");
+let resultRray=[];
+for(let i =0;i<y.length;i++){
+resultRray.push(y[i].charAt(0).toUpperCase()+y[i].substr(1))
+}
+let finalArray = resultRray.toString().replace(',','');
+console.log(finalArray)
+
 
 /*----Number of occurance of word in string------- */
 
