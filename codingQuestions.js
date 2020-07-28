@@ -19,6 +19,24 @@ const fibonacciUsingReccursion = num => {
   }
   return fibonacciUsingReccursion(num - 1) + fibonacciUsingReccursion(num - 2);
 };
+
+/*----Sort Array function with out sort------- */
+let x = [10,50,40,33,20];
+for(var i=1;i<x.length:i++){
+for(var j=0;j<i;j++){
+    if(x[i]<x[j]){
+      let temp = x[i]
+      x[i] = x[j];
+      x[j] = temp;
+    }
+}
+}
+console.log(x) // [10,20,33,40,50]
+// Using sort method 
+let x = [20,80,40,60]
+x.sort((a,b)=>a-b);
+console.log(x) // [20,40,60,80]
+
 /*----Plaindrome------- */
 const palindrome = (str) => {
 str = str.toLowerCase()
