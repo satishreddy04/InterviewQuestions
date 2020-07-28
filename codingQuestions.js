@@ -58,6 +58,17 @@ let array = [1,2,1,2]
 const result = array.filter((item,index)=>array.indexOf(item)===index)
 console.log(result)//[1,2]
 
+/*----Factorial------- */
+function fac(x){
+if(x<0) return 
+if(x===0) return 1;
+return x * fac(x-1)
+}
+var functionFctoriala= fac(5);
+console.log(functionFctoriala)
+
+
+
 /*----Plaindrome------- */
 const palindrome = (str) => {
 str = str.toLowerCase()
