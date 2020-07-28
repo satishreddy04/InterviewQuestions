@@ -79,6 +79,14 @@ return total
 var fianlSum= sum(5);
 console.log(fianlSum)//10
 
+/*----Reverse of String------- */
+
+function reverseString(mainString){
+  return mainString.split('').reverse().join();
+}
+let finalReverseString = reverseString("tranzeal")
+console.log(finalReverseString);
+
 /*----Plaindrome------- */
 const palindrome = (str) => {
 str = str.toLowerCase()
