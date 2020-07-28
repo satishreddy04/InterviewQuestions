@@ -37,6 +37,27 @@ let x = [20,80,40,60]
 x.sort((a,b)=>a-b);
 console.log(x) // [20,40,60,80]
 
+/*----Removiong duplicate items in an Array------- */
+
+let orginalArray = [1,1,2,2]
+let result = []
+for(var i=0;i<orginalArray.length;i++){
+if(result.indexOf(originalArray[i]==-1)){
+  result.push(orginalArray[i])
+}
+}
+console.log(originalArray)// [1,2]
+
+//using ES6
+//1.using set - set is used to remove the duplicate values from array 
+let array = [1,2,1,2]
+const result = [... new Set(array)]
+console.log(result)//[1,2]
+//2. using filter method
+let array = [1,2,1,2]
+const result = array.filter((item,index)=>array.indexOf(item)===index)
+console.log(result)//[1,2]
+
 /*----Plaindrome------- */
 const palindrome = (str) => {
 str = str.toLowerCase()
