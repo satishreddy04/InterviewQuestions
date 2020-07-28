@@ -166,5 +166,5 @@ function getSumOFNum(arr){
     
 
 
-
+//reference - https://www.linkedin.com/pulse/commonly-asked-interview-questions-ui-javascript-angular-alapati/
 
