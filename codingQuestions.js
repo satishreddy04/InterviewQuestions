@@ -11,6 +11,20 @@ function getFibonoci(n){
   return result
 
 }
+// Another method
+
+function fib(n){
+  let num1 =0;
+  let num2 = 1;
+  let num3;
+  for(let i=0; i<n; i++){
+    num3 = num1+num2;
+    num1= num2;
+    num2= num3;
+    console.log(num3)
+  }
+}
+
 // Recursion means iterating over an operation by calling same function 
 //itself untill result is arrived
 const fibonacciUsingReccursion = num => {
@@ -32,6 +46,7 @@ for(var j=0;j<i;j++){
 }
 }
 console.log(x) // [10,20,33,40,50]
+
 // Using sort method 
 let x = [20,80,40,60]
 x.sort((a,b)=>a-b);
