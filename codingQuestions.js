@@ -102,6 +102,15 @@ function reverseString(mainString){
 let finalReverseString = reverseString("tranzeal")
 console.log(finalReverseString);
 
+
+/*----Number of occurance of word in string------- */
+
+function countInstances(string, word) {
+   return string.split(word).length - 1;
+}
+let repeatedCount = countInstances("tranzeal inc", "n");
+console.log(repeatedCount)
+
 /*----Plaindrome------- */
 const palindrome = (str) => {
 str = str.toLowerCase()
