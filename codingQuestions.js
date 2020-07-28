@@ -67,7 +67,17 @@ return x * fac(x-1)
 var functionFctoriala= fac(5);
 console.log(functionFctoriala)
 
+/*----sum of total------- */
 
+function sum(x){
+let total = 0;
+for(let i = 0;i<x;i++){
+    total = total + i
+}
+return total
+}
+var fianlSum= sum(5);
+console.log(fianlSum)//10
 
 /*----Plaindrome------- */
 const palindrome = (str) => {
